@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Marks Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Enter Marks</h2>
+    <form id="marksForm">
+        <label for="subject1">physics marks:</label>
+        <input type="number" id="subject1" name="subject1" required><br><br>
+        <label for="subject2">chemistry marks:</label>
+        <input type="number" id="subject2" name="subject2" required><br><br>
+        <label for="subject3">maths marks:</label>
+        <input type="number" id="subject3" name="subject3" required><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+    <div class="result" id="result" style="display: none;">
+        <h2>Results</h2>
+        <p>Total PCM Marks: <span id="totalMarks"></span></p>
+        <p>Average PCM Marks: <span id="averageMarks"></span></p>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
